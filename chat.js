@@ -44,7 +44,6 @@ class Chat {
 
       document.getElementById("inputTokenButton").onclick = () => {
         this.answer = document.getElementById("inputToken").value;
-	console.log(this.answer);
 	this.lc.setRemoteDescription(JSON.parse(this.answer));
 	
 	document.getElementById("chatSubmit").onclick = () => {
