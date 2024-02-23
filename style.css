@@ -1,0 +1,54 @@
+#chat {
+  background-color: gray;
+  height: 250px;
+  overflow: scroll;
+}
+
+.sent {
+  text-align: right;
+  background-color: lightgreen;
+  width: auto;
+  margin: 3px;
+  margin-left: 20%;
+  border-radius: 5px;
+  padding: 5px;
+  
+
+}
+
+.recived {
+  text-align: left;
+  background-color: white;
+  width: auto;
+  margin: 3px;
+  margin-right: 20%;
+  border-radius: 5px;
+  padding: 5px;
+  
+
+}
+
+#myToken {
+  width: 80%;
+  height: 15px;
+  overflow: scroll;
+  white-space: nowrap;
+}
+
+
+
+#mine {
+  width: 90%;
+  background-color: lightblue;
+  padding: 3px;
+ }
+
+#inputFriendsToken {
+  margin-bottom: 5px;
+  margin-top: 1px;
+}
+
+
+.friend {
+  display: inline-block;
+}

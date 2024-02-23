@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WEBRTC chat</title>
+    <link href="./style.css" rel="stylesheet" >
+<meta name="viewport" content="width=300">
+  </head>
+  <body>
+    <button id="makeASesstion">Create a sesstion</button>
+    <p style="margin: 3px;">OR</p>
+
+    <div style="display: none" class="infoblock" id="mine">
+      <p>Your Token(send it to your friend):</p>
+      <button class="tokendisplay" id="copyToken" onclick={coppy()}>copy</button>
+      <input class="tokendisplay" id="myToken" />
+    </div>
+
+    <div style="margin: 1px" class="infoblock" id='inputFriendsToken'>
+      <p class="friend" id="friendsToken">Type friend's token:</p>
+      <input  class="friend" id="inputToken" />
+      <button class="friend" id="inputTokenButton">Submit</button>
+    </div>
+
+    
+
+    
+    <div style="width: 100%;display:inline;">
+     <input class="message" id="chatInput"/>
+     <button id="chatSubmit">chat submit</button>
+    </div>
+    <div id="chat">
+
+    </div>
+  </body>
+  
+  <script type="text/javascript" src="chat.js"></script>
+  <script>
+    let chatField = document.getElementById("chat");
+    let chat = new Chat(chatField);
+
+    function coppy(){
+      document.getElementById("myToken").select();
+      document.execCommand("copy");
+       
+    }
+  </script>
+</html>
