@@ -61,6 +61,7 @@ class Chat {
     newELement.textContent = message;
     newELement.className = "recived";
     this.chatField.appendChild(newELement);
+    this.chatField.scrollIntoView(false);
   }
 
   #showMyToken(token){
@@ -74,7 +75,7 @@ class Chat {
     newELement.textContent = text;
     newELement.className = "sent"
     this.chatField.appendChild(newELement);
-
+    this.chatField.scrollIntoView(false);
   }
 
 }
